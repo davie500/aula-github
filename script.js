@@ -38,14 +38,30 @@
 
 // Exercício 1
 
-function inverterPalavra() {
+// function inverterPalavra() {
 
-    let palavra = prompt("Digite uma palavra para inverter:");
-    let palavraInvertida = '';
-    for (let i = palavra.length - 1; i >= 0; i--) {
-        palavraInvertida += palavra[i]; 
+//     let palavra = prompt("Digite uma palavra para inverter:");
+//     let palavraInvertida = '';
+//     for (let i = palavra.length - 1; i >= 0; i--) {
+//         palavraInvertida += palavra[i]; 
+//     }
+//     alert("Palavra invertida: " + palavraInvertida);
+// }
+
+// inverterPalavra();
+
+
+// Exercício 2
+
+let palavra = "algoritmo"
+let resultado = ""
+
+for(let i = 0; i < palavra.length; i++) {
+    if (i % 2 === 0) {
+        resultado += entrada[i].toUpperCase();
+    } else {
+        resultado += entrada[i].toLowerCase();
     }
-    alert("Palavra invertida: " + palavraInvertida);
 }
 
-inverterPalavra();
+console.log("Resultado: ", resultado);

@@ -53,15 +53,33 @@
 
 // Exercício 2
 
-let palavra = "algoritmo"
-let resultado = ""
+// let palavra = "algoritmo"
+// let resultado = ""
 
-for(let i = 0; i < palavra.length; i++) {
-    if (i % 2 === 0) {
-        resultado += entrada[i].toUpperCase();
-    } else {
-        resultado += entrada[i].toLowerCase();
+// for(let i = 0; i < palavra.length; i++) {
+//     if(i % 2 === 0){
+//         resultado += palavra[i].toUpperCase();
+//     }else {
+//         resultado += palavra[i].toLowerCase();
+//     }
+// }
+
+// console.log("Resultado: ", resultado);
+
+// Exercício 3
+
+let lista = [1,2,3,4,5,6,7,8,9,15]
+let resultado = []
+
+for(let i =0; i<lista.length; i++){
+    if(lista[i] % 3 == 0 && lista[i] % 5 ==0){
+        resultado.push("boom")
+    }else if(lista[i] % 3 == 0){
+        resultado.push("plic")
+    }else if(lista[i] % 5 ==0){
+        resultado.push("plac")
+    }else {
+        resultado.push(lista[i])
     }
-}
-
-console.log("Resultado: ", resultado);
+}   
+console.log(resultado)
